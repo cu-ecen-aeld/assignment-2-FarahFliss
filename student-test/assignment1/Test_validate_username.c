@@ -16,6 +16,5 @@ void test_validate_my_username()
 {
     const char* myUsr = my_username();
     const char* confUsr = malloc_username_from_conf_file();
-     TEST_ASSERT_EQUAL_STRING_MESSAGE(myUsr, confUsr, "Username comparison failed");
-    TEST_ASSERT_TRUE_MESSAGE(false,"AESD students, please fix me!");
+     TEST_ASSERT_EQUAL_STRING_MESSAGE(confUsr, myUsr, "Username comparison failed");
 }
